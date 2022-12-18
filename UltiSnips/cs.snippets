@@ -4,6 +4,21 @@
 
 priority -50
 
+########################
+#         TEST         #
+#########################
+snippet test_switch "DESCRIPTION: switch statement" b
+switch (${1:statement})
+{
+	case ${2:value}:
+		break;
+
+	default:
+		$0break;
+}
+endsnippet
+
+
 #########################
 #  classes and structs  #
 #########################
