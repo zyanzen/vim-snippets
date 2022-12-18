@@ -5,17 +5,28 @@
 priority -50
 
 ########################
-#         TEST         #
+#     Boiler Plate     #
 #########################
-snippet test_switch "DESCRIPTION: switch statement" b
-switch (${1:statement})
-{
-	case ${2:value}:
-		break;
+snippet boiler "DESCRIPTION: Boilerplate code" b
 
-	default:
-		$0break;
+using System;
+using System.IO;
+
+namespace ${1:MyNamespace}
+{
+    ${2:public} class ${3:`!p snip.rv = snip.basename`}
+    {	
+    	static void Main(string[] args)
+        {
+            // comment$0
+
+            
+        }
+	
+    }
+        
 }
+
 endsnippet
 
 
