@@ -181,8 +181,7 @@ snippet ife "if else statement" b
 if ($1)
 {
 	$2
-}
-else
+}else
 {
 	${VISUAL}$0
 }
@@ -223,7 +222,7 @@ switch (${1:statement})
 }
 endsnippet
 
-snippet case "case" b
+snippet casee "case" b
 case ${1:value}:
 	$2
 	break;
@@ -234,7 +233,7 @@ endsnippet
 #  wrappers  #
 ##############
 
-snippet using "using statement" b
+snippet usingg "using statement" b
 using (${1:resource})
 {
 	${VISUAL}$0
@@ -268,32 +267,24 @@ endsnippet
 ########################
 
 snippet trycf "try catch block" b
-try
-{
+try{
 	${1:TASK}
-}
-catch (${2:Exception} ${3:e})
-{
+}catch (${2:Exception} ${3:e}){
 	Console.WriteLine("Error : {0}", e.Message);
-}
-finally
-{
+}finally{
 	${VISUAL}$0	
 }
 endsnippet
 
 snippet tryc "try catch block" b
-try
-{
+try{
 	${1:TASK}
-}
-catch (${2:Exception} ${3:e})
-{
+}catch (${2:Exception} ${3:e}){
 	Console.WriteLine("Error : {0}", e.Message);
 }
 endsnippet
 
-snippet throw "throw"
+snippet throww "throw"
 throw new $1Exception("$2");
 endsnippet
 
