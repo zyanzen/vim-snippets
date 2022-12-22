@@ -180,10 +180,10 @@ endsnippet
 snippet ife "if else statement" b
 if ($1)
 {
-	$2
+	${2:code}
 }else
 {
-	${VISUAL}$0
+	${3:code}
 }
 endsnippet
 
@@ -204,7 +204,7 @@ endsnippet
 snippet ifnn "if not null" b
 if ($1 != null)
 {
-	$2
+	${2:code}
 }else
 {
 	${VISUAL}$0
@@ -224,7 +224,7 @@ endsnippet
 
 snippet casee "case" b
 case ${1:value}:
-	$2
+	${2:code}
 	break;
 endsnippet
 
@@ -388,7 +388,7 @@ endsnippet
 #  comments  #
 ##############
 
-snippet <s "XML summary comment" b
+snippet /// "XML summary comment" b
 /// <summary>
 /// $0
 /// </summary>
