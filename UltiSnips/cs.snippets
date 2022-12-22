@@ -263,24 +263,29 @@ endsnippet
 #  exception handling  #
 ########################
 
-snippet try "try catch block" b
+snippet trycf "try catch block" b
 try
 {
-	${VISUAL}$0
+	${1:TASK}
 }
-catch (${1:Exception} ${2:e})
+catch (${2:Exception} ${3:e})
 {
-	throw;
-}
-endsnippet
-
-snippet tryf "try finally block" b
-try
-{
-	${VISUAL}$0
+	Console.WriteLine("Error : {0}", e.Message);
 }
 finally
 {
+	${VISUAL}$0	
+}
+endsnippet
+
+snippet tryc "try catch block" b
+try
+{
+	${1:TASK}
+}
+catch (${2:Exception} ${3:e})
+{
+	Console.WriteLine("Error : {0}", e.Message);
 }
 endsnippet
 
@@ -388,7 +393,7 @@ endsnippet
 #  comments  #
 ##############
 
-snippet /// "XML summary comment" b
+snippet <s "XML summary comment" b
 /// <summary>
 /// $0
 /// </summary>
