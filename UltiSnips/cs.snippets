@@ -358,14 +358,14 @@ public static bool operator !=($1 x, $1 y) => !(x == y);
 
 endsnippet
 
-snippet mth "funcc" b
+snippet methodd "funcc" b
 ${1:public} ${2:void} ${3:MyMethod}(${4})
 {
 	$0
 }
 endsnippet
 
-snippet funcs "Static method" b
+snippet methods "Static method" b
 ${1:public} static ${2:void} ${3:MyMethod}(${4})
 {
 	$0
@@ -376,7 +376,7 @@ endsnippet
 # constructor #
 ###############
 
-snippet ctor "Constructor" b
+snippet methodc "Constructor" b
 ${1:public} ${2:`!p snip.rv = snip.basename or "untitled"`}(${3})
 {
 	$0
